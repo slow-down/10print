@@ -11,7 +11,6 @@ namespace _10PRINT
     {
         private Random rnd = new Random();
         private Pen black = new Pen(Color.Black, 2);
-        private Pen red = new Pen(Color.Red, 2);
 
         public void Draw(Graphics g, Rectangle rec)
         {
