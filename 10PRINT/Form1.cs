@@ -12,9 +12,21 @@ namespace _10PRINT
 {
     public partial class Form1 : Form
     {
+        PRINT_10 print_10 = new PRINT_10();
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Canvas_Paint(object sender, PaintEventArgs e)
+        {
+            print_10.Draw(e.Graphics, e.ClipRectangle);
+        }
+
+        private void canvas_MouseClick(object sender, MouseEventArgs e)
+        {
+            canvas.Invalidate();
         }
     }
 }
